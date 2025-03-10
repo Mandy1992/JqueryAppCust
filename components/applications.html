@@ -1,0 +1,39 @@
+<application>
+    <div id="list-container">
+        <h2>Application Listing </h2>
+        <button id="openApplicationModal">Create Application</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Application Id</th>
+                    <th> Name</th>
+                    <th> Status</th>
+                </tr>
+            </thead>
+            <tbody id="applicationTable">
+                <!-- Data will load here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Modal -->
+    <div id ="applicationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">closeX</span>
+            <h3>Create Application</h3>
+            <form id ="applicationForm">
+                <label>Name: </label>
+                <input type="text" id="appName" required />
+                <label>Status: </label>
+                <select id="appStatus">
+                    <option>Pending</option>
+                    <option>Approved</option>
+                </select>
+                <button type="submit">Submit</button>
+                       </form>
+        </div>
+
+    </div>
+</application>
+
+

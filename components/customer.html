@@ -1,0 +1,31 @@
+<Customer>
+    <div class="list-container">
+        <h2>Customer Listing</h2>
+        <button id="openCustomerModal">Create Customer</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Cutsomer id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="customerTable"></tbody>
+        </table>
+    </div>
+    <!-- Modal -->
+     <div id="customerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">closeX</span>
+            <h3>Create Customer</h3>
+            <form id="customerForm">
+                <label>Name:</label>
+                <input type="text" id="customerName" required />
+                <label>Email:</label>
+                <input type="email" id ="customerEmail" required />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        </div>
+</Customer>

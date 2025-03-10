@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+}
+.logo img {
+    width: 100px;
+}
+
+.user-avatar {
+    width:40px;
+    height:40px;
+}
+.nav-tabs {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-tabs .tab {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    
+}
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap:10px
+}

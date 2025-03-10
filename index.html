@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prologis - Admin Portal</title>
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div id="header-container"></div>
+    
+    <div id="listingContainer"></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" ></script>
+    <!-- <script src="assets/js/header.js"></script>x -->
+    <script src="assets/js/application.js"></script>
+    <script src="assets/js/customer.js"></script>
+    
+    <script>
+        $(document).ready(function () {
+            //Load Header
+            $('#header-container').load("components/header.html", function () {
+                loadApplications();
+                $(document).on("click", "#showApplications", function () {
+                    $(".tab").removeClass("active");
+                    $(this).addClass("active");
+                    loadApplications();
+                })
+
+                $(document).on("click", "#showCustomers", function () {
+                    $(".tab").removeClass("active");
+                    $(this).addClass("active");
+                    loadCustomer();
+                })
+                function loadApplications() {
+                    $("#listingContainer").load("components/applications.html")
+                }
+                function loadCustomer() {
+                    $("#listingContainer").load("components/customer.html")
+                }
+            });
+        })
+    </script>
+</body>
+</html>
